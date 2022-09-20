@@ -11,14 +11,17 @@
         
         function count(){
             let input1=document.getElementById("text1").value;
-            //console.log(typeof(input1));
+            if(input1 ==""){
+                document.getElementById("ans").innerHTML="No Limit";
+            }
+           else{ 
             let limit =Number(input1);
                 for (let i = limit; i >=0; i--) {
                 console.log(i);
 
             }
-            console.log("Count Down Ended");
-        }
+            document.getElementById("ans").innerHTML="Count Down Ended";
+        }}
     </script>
 </head>
 <body>
@@ -38,10 +41,21 @@
         background-color:#8888;
         font-family: "Poppins";
     }
+    .header{
+        font-size: 2.2rem;
+        position: relative;
+        left:-20px;
+        top: -4px;
+    }
     .section{
         position: relative;
         left: 43%;
         top:7rem;
+    }
+    #ans{
+        position: relative;
+        left:25px;
+        font-size: 1.7rem;
     }
     #btn1{
         position: relative;
