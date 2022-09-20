@@ -7,13 +7,18 @@ body{
     margin: 0%;
     padding: 0%;
     font-family: "Arial", Helvetica, sans-serif;
+    overflow: hidden;
+}
+.container{
+    position: relative;
+    top:2.5rem;
 }
 i{
-    font-size: 150px;
+    font-size: 250px;
     cursor: pointer;
     position: relative;
-    top: 50%;
-    left: 46%;
+    top: -5rem;
+    left: 43%;
     transform: translate(-50%, -50%);
 }
 h1{
