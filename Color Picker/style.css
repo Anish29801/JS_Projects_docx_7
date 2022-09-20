@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+  position: relative;
+}
+
+body{
+    font-family: "Poppins";
+    background-color: #888888;
+}
+#Answer{
+  position: relative;
+  top:-45px;
+  left: 110px;
+  font-weight: 800;
+}
+h2{
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111111;
+}
+button{
+  padding: 5px;
+  font-weight: 300;
+  left:80px;
+  top:-20px;
+  cursor:pointer;
+  border-radius: 8px;
+  border: none;
+}
+#Box{
+  left:40%;
+  top:9rem;
+}

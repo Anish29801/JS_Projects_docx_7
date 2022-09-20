@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+    function reverseString(str) {
+    var splitString = str.split("");
+    var reverseArray = splitString.reverse(); 
+ 
+    var joinArray = reverseArray.join("");
+   
+    return joinArray; 
+}
+
+
+    function checker(){
+    var str1=document.getElementById("text1").value;
+    if(str1 === reverseString(str1)){
+        document.getElementById("ans").innerHTML= str1 +" is Pallidrone";
+    }
+    else{
+        document.getElementById("ans").innerHTML= str1 +" is Not Pallidrone";
+    }
+    }
+</script>
+
+</head>
+<body>
+    <div id="game">
+    <h2 class="header">Palindrome Game</h2>
+    <input type="text" placeholder="Enter a word " id="text1"><br>
+    <button onclick="checker()" id="btn1"> Check Here </button>
+    <h2 class="header" id="ans"></h2>
+    </div>
+</body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body{
+    background-color:#8888;
+    font-family: "Poppins";
+}
+.section{
+    position: relative;
+    left: 43%;
+    top:5rem;
+}
+#game{
+    position: relative;
+    top:7rem;
+    left:45%;
+}
+</style>

@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        
+        function count(){
+            let input1=document.getElementById("text1").value;
+            //console.log(typeof(input1));
+            let limit =Number(input1);
+                for (let i = limit; i >=0; i--) {
+                console.log(i);
+
+            }
+            console.log("Count Down Ended");
+        }
+    </script>
+</head>
+<body>
+    <div class="section">
+        <h2 class="header">Countdown App</h2>
+    <input type="text" placeholder="Enter a limit point " id="text1"><br>
+    <button onclick="count()" id="btn1"> Start </button>
+    <h3 id="ans"></h3>
+    </div>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+    body{
+        background-color:#8888;
+        font-family: "Poppins";
+    }
+    .section{
+        position: relative;
+        left: 43%;
+        top:7rem;
+    }
+    #btn1{
+        position: relative;
+        left:2.8rem;
+    }
+</style>
